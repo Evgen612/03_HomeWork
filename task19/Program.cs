@@ -15,10 +15,10 @@ if(num < 10000 || num > 99999)
 else
 {int a = num % 10;
 int a1 = num / 10000;
-int b = num % 100;
-int b1 = num / 1000;
+int b = num / 10 % 10;
+int b1 = num / 1000 % 10;
 
-if(a == a1 || b == b1)
+if(a == a1 && b == b1)
 {
     Console.Write($"{num} --> является");
 }
